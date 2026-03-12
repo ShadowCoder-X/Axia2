@@ -9,8 +9,6 @@ function Card() {
             <img src="/assets/images/pic12.jpeg" alt="" />
           </div>
 
-          <h1 className="heading">Hello World!</h1>
-
           <h3 className="name"></h3>
 
           <h3 className="role"></h3>
