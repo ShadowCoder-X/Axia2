@@ -26,8 +26,12 @@ import React from "react";
 //         ? "Good Evening, My Sweet Love."
 //         : "HELLO";
 
+// function Greeting() {
+//   return <div>{/*  <h1 className="heading">{Greet}!</h1> */}</div>;
+// }
+
 function Greeting() {
-  return <div>{/*  <h1 className="heading">{Greet}!</h1> */}</div>;
+  return <div></div>;
 }
 
 export default Greeting;
