@@ -15,22 +15,19 @@ import React from "react";
 //   Greet = "Good Night";
 // }
 
-let time = 5;
-const Greet =
-  time > 8
-    ? "Good Morning, My princess."
-    : time > 5
-      ? "Good Afternoon, My Supreme Leader."
-      : time > 2
-        ? "Good Evening, My Sweet Love."
-        : "HELLO";
+// let time = 5;
+
+// const Greet =
+//   time > 8
+//     ? "Good Morning, My princess."
+//     : time > 5
+//       ? "Good Afternoon, My Supreme Leader."
+//       : time > 2
+//         ? "Good Evening, My Sweet Love."
+//         : "HELLO";
 
 function Greeting() {
-  return (
-    <div>
-      <h1 className="heading">{Greet}!</h1>
-    </div>
-  );
+  return <div>{/*  <h1 className="heading">{Greet}!</h1> */}</div>;
 }
 
 export default Greeting;
