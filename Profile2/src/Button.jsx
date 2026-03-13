@@ -1,9 +1,10 @@
 import React from "react";
 
-function Button() {
+function Button({ children }) {
+  console.log(children);
   return (
     <div>
-      <button className="btn">Press this button to move forward</button>
+      <button className="btn">{children}</button>
     </div>
   );
 }

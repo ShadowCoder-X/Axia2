@@ -57,11 +57,19 @@ function App() {
     },
   ];
 
+  const techSkills = ["HTML", "CSS", "REACT", "JAVASCRIPT"];
+
   return (
     <div>
-      <Greeting />
-      <Button />
-      {data.map((userCard) => (
+      <Button>Load Users</Button>
+
+      <ol>
+        {techSkills.map((tech, index) => {
+          return <li key={index}>{tech}</li>;
+        })}
+      </ol>
+
+      {/* {data.map((userCard) => (
         <Card
           key={userCard.id}
           pic={userCard.pic}
@@ -69,8 +77,13 @@ function App() {
           role={userCard.role}
           hobby={userCard.hobby}
           bio={userCard.bio}
-        />
-      ))}
+        /> 
+      ))} */}
+
+      {data.map((user) => {
+        return <Card key={user.id} name={user.name} pic={user.pic} {...user} />;
+      })}
+      <Button>Click Me</Button>
     </div>
   );
 }
