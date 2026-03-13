@@ -1,0 +1,17 @@
+#root {
+  background-color: gray;
+  height: 45rem;
+  width: 50rem;
+  margin: auto;
+  padding: 50px;
+}
+
+.btn {
+  background: black;
+  color: #fff;
+  padding: 20px;
+  border: 2px solid red;
+  margin: auto;
+  display: flex;
+  align-items: flex-end;
+}
