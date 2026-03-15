@@ -1,5 +1,4 @@
 #root {
-  background-color: gray;
   height: 45rem;
   width: 50rem;
   margin: auto;
@@ -14,4 +13,10 @@
   margin: auto;
   display: flex;
   align-items: flex-end;
+}
+
+.img {
+  height: 1000px;
+  width: 60px;
+  max-width: 100%;
 }

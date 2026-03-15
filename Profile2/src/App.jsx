@@ -4,8 +4,24 @@ import Greeting from "./Greeting";
 import Card from "./Card";
 import Button from "./Button";
 import profilePics from "./assets/images/pic12.jpeg";
+import { useState } from "react";
+//import { useFetch } from "./fetch";
 
 function App() {
+  // useFetch()
+
+  // useState()
+  // useEffect()
+  // useRef()
+  // useReduser()
+  // useContext()
+  // useMemo()
+
+  const [state, setState] = useState(0);
+  const [val, setVal] = useState("Helloo");
+  const [input, setInput] = useState("name");
+
+  console.log(state, val, input);
   const data = [
     {
       id: 1,
