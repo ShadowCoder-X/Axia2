@@ -6,10 +6,10 @@
 }
 
 .btn {
-  background: black;
+  background: green;
   color: #fff;
   padding: 20px;
-  border: 2px solid red;
+  border: 2px solid gray;
   margin: auto;
   display: flex;
   align-items: flex-end;
@@ -34,6 +34,20 @@
   width: 10%;
 }
 
-.counter {
+.counter,
+.lightSwitch {
   margin-bottom: 50px;
+}
+
+.accordion {
+  border: 1px solid #1e1e1e;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.accordion button {
+  width: 100%;
+  padding: 10px;
+  text-align: start;
 }

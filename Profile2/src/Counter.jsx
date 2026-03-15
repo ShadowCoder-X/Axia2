@@ -39,7 +39,7 @@ const Counter = () => {
       </div>
 
       {/*light switching */}
-      <div>
+      <div className="lightSwitch">
         <h3>Light Switch</h3>
         <p>This light bulb is {isOn ? "ON" : "OFF"} </p>
         <button onClick={toggleLight}>

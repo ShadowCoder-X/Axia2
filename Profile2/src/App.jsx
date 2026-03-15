@@ -5,6 +5,7 @@ import Card from "./Card";
 import Button from "./Button";
 import profilePics from "./assets/images/pic12.jpeg";
 import Counter from "./Counter";
+import Accordion from "./Accordion";
 //import { useState } from "react";
 //import { useFetch } from "./fetch";
 
@@ -99,9 +100,17 @@ function App() {
         /> 
       ))} */}
 
-      {data.map((user) => {
+      {/* {data.map((user) => {
         return <Card key={user.id} name={user.name} pic={user.pic} {...user} />;
-      })}
+      })} */}
+
+      <Accordion title="What is React" content="JavaScript library for UIs." />
+
+      <Accordion
+        title="What is JSX"
+        content="A syntax extension for JavaScript."
+      />
+
       <Button>Click Me</Button>
     </div>
   );
