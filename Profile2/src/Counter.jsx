@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
-  const [isOn, setIsOn] = useState(true);
+  const [isOn, setIsOn] = useState(false);
   //   console.log(count);
   //   console.log(setCount);
 
@@ -15,6 +15,11 @@ const Counter = () => {
   function handleDecrement() {
     console.log("Decrease!!!");
     setCount(count - 1);
+  }
+
+  function toggleLight() {
+    setIsOn((prev) => !prev);
+    // setIsOn(!isOn);
   }
 
   return (
@@ -37,7 +42,9 @@ const Counter = () => {
       <div>
         <h3>Light Switch</h3>
         <p>This light bulb is {isOn ? "ON" : "OFF"} </p>
-        <button>Press to Switch ON</button>
+        <button onClick={toggleLight}>
+          Press to Switch {isOn ? "OFF" : "ON"}
+        </button>
       </div>
     </>
   );
