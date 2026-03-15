@@ -23,3 +23,8 @@ function Accordion({ title, content }) {
 }
 
 export default Accordion;
+
+//BrowserRouter
+//Routes
+//Route
+//Link
