@@ -1,9 +1,9 @@
-export const async useFetch () {
+export const useFetch =  async () => {
     try {
         const res = await fetch('url');``
-        const data = await res.json{};
+        const data = await res.json();
     } catch (error) {
 
     }
-    return data()
-}
+    return (data, function)
+};
