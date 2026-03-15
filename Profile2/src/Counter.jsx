@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
+  const [isOn, setIsOn] = useState(true);
   //   console.log(count);
   //   console.log(setCount);
 
@@ -35,7 +36,7 @@ const Counter = () => {
       {/*light switching */}
       <div>
         <h3>Light Switch</h3>
-        <p>This light bulb is OFF</p>
+        <p>This light bulb is {isOn ? "ON" : "OFF"} </p>
         <button>Press to Switch ON</button>
       </div>
     </>
