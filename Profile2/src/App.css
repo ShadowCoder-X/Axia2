@@ -6,13 +6,13 @@
 }
 
 .btn {
-  background: green;
-  color: #fff;
-  padding: 20px;
-  border: 2px solid gray;
-  margin: auto;
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  margin-bottom: 10px;
   display: flex;
-  align-items: flex-end;
 }
 
 .profile {
@@ -20,19 +20,20 @@
   margin: 0 auto;
 }
 
-.img {
-  height: 100%;
-  width: 100%;
+.card {
+  justify-content: center;
 }
 
-.card {
-  text-align: center;
-}
 .profile-img {
-  border: 1px solid #5a5858;
-  border-radius: 50%;
-  width: 10%;
+  border: 1px solid #5a5b5b;
+  border-radius: 80px;
+  width: 20%;
 }
+
+/* .img {
+  height: 100%;
+  width: 100%; 
+} */
 
 .counter,
 .lightSwitch {
