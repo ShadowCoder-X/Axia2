@@ -7,7 +7,7 @@ const Card = ({ name, role, hobby, pic, bio }) => {
       <div className="profile">
         <div className="card">
           <div className="img">
-            <img src={pic} alt={name} />
+            <img src={pic} alt={name} className="profile-img" />
           </div>
 
           <h3 className="name">Name: {name}</h3>
