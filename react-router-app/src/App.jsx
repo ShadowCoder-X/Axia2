@@ -9,13 +9,13 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <>
-      <Header />
       <Navigation />
-      <h1 class="text-3xl font-bold underline text-green-700 text-center">
+      {/* <Header />
+       <h1 class="text-3xl font-bold underline text-green-700 text-center">
         Hello world!
-      </h1>
+      </h1> 
 
-      <Footer />
+      <Footer /> */}
 
       <Routes>
         <Route path="/" element={<Home />} />
