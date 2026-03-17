@@ -1,9 +1,14 @@
 import React from "react";
+import Header from "../component/Header";
+import Footer from "../component/Footer";
 
 function Contact() {
   return (
     <div>
-      <h2 className="">This is a Contact page</h2>
+      <Header />
+
+      <h2 class="">This is a Contact page </h2>
+      <Footer />
     </div>
   );
 }

@@ -1,12 +1,11 @@
 import React from "react";
+import Header from "../component/Header";
+import Footer from "../component/Footer";
 
 function About() {
   return (
     <div>
       <Header />
-      <h1 class="text-3xl font-bold underline text-green-700 text-center">
-        Hello world!
-      </h1>
 
       <h2 class="">This is About Us </h2>
       <Footer />
