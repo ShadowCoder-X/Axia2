@@ -11,6 +11,7 @@ function Navigation() {
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/signup">SignUp</Link>
+          <Link to="/dashboard">Dashboard</Link>
         </nav>
       </div>
     </>
