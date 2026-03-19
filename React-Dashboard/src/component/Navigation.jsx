@@ -1,20 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// import user from "./assets/user.png";
+// import email from "./assets/email.png";
+// import password from "./assets/password.png";
 function Navigation() {
   return (
-    <>
+    <div className=" max-w-5xl mx-auto">
       <div>
         {/* <h2>Navigation</h2> */}
 
-        <nav>
-          <Link to="/">Home</Link>
+        <nav className="text-2xl text-green-700 justify-around">
+          <div>
+            <Link to="/">Home</Link>
+          </div>
           <Link to="/about">About</Link>
           <Link to="/signup">SignUp</Link>
           <Link to="/dashboard">Dashboard</Link>
         </nav>
       </div>
-    </>
+    </div>
   );
 }
 

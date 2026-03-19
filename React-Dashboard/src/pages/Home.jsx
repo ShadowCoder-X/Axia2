@@ -2,8 +2,8 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="text-align center">
-      <p> Hi, Ajala Lord'srefuge Omolade. Welcome Back </p>
+    <div className="text-center text-3xl font-bold text-black-200">
+      <p> Hi, Ajala. Welcome Back </p>
     </div>
   );
 }

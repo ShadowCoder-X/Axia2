@@ -11,7 +11,7 @@ import Dashboard from "./pages/Dashboard";
 function App() {
   return (
     <div>
-      <Navigation />
+      <Navigation text-2xl text-green-700 />
       {/* <Header />
       <Footer /> */}
 
