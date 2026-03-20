@@ -15,13 +15,13 @@ function SignUp() {
         <h2 className="text-3xl font-bold text-black mb-4 ">Sign Up</h2>
 
         <div className="text-left">
-          <div>
+          <div className="mb-3">
             <img src={user_icon} alt="user-icon" className="w-6 h-6" />
             <label for="full-name">Full Name: </label>
             <br />
             <input
               type="text"
-              name="name"
+              name="full-name"
               placeholder="Full Name"
               //  value={}
               //  onChange={}
@@ -29,7 +29,7 @@ function SignUp() {
             />
           </div>
 
-          <div>
+          <div className="mb-3">
             <img src={email_icon} alt="email-icon" className="w-6 h-6" />
             <label for="email">Eamil: </label>
             <br />
@@ -43,7 +43,7 @@ function SignUp() {
             />
           </div>
 
-          <div>
+          <div className="mb-3">
             <img src={password_icon} alt="password-icon" className="w-6 h-6" />
             <label for="password">Password: </label>
             <br />
@@ -57,7 +57,7 @@ function SignUp() {
             />
           </div>
 
-          <div>
+          <div className="mb-3">
             <img src={password_icon} alt="password-icon" className="w-6 h-6" />
             <label for="confirm-password">Confirm Password: </label>
             <br />
@@ -71,9 +71,11 @@ function SignUp() {
             />
           </div>
 
-          <button className="">Sign Up</button>
+          <button className="mb-3 border-2 p-2 bg-gray-300 cursor-pointer">
+            Sign Up
+          </button>
 
-          <p className="Already have an account? "></p>
+          <p className="mb-3 ">Already have an account?... </p>
         </div>
       </form>
     </div>
