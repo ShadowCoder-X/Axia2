@@ -1,17 +1,58 @@
 import user_icon from "../assets/user.png";
 import email_icon from "../assets/email.png";
 import password_icon from "../assets/password.png";
+import { useState } from "react";
 
 function SignUp() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    password: "",
+    confirmpassword: "",
+  });
+
+  function handleChange(e) {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  }
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    if (form.password != form.confirmpassword) {
+      alert("Passwords do not match");
+      return;
+    }
+
+    try {
+      const res = await fetch(
+        "https://simple-crud-backend-6o49.onrender.com/api/v1/auth/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: form.name,
+            email: form.email,
+            password: form.password,
+          }),
+        },
+      );
+
+      const data = await res.json();
+      console.log(data);
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
   return (
     <div
       className="flex justify-center size- 40 max-auto
     h-155 p-6 "
     >
-      <form
-        action=""
-        className="p-10 text-center bg-gray-200 border-double w-120"
-      >
+      <form action="" className="p-10 text-center bg-gray-200 border- w-120">
         <h2 className="text-3xl font-bold text-black mb-4 ">Sign Up</h2>
 
         <div className="text-left">

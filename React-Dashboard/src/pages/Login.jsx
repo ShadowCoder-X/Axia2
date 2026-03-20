@@ -70,7 +70,7 @@ function Login() {
             />
           </div>
 
-          <div className="mb-4 flex justify-between items-center">
+          <div className="flex justify-between items-center mb-3">
             <label>
               <input
                 type="checkbox"
@@ -83,22 +83,18 @@ function Login() {
               Remember Me
             </label>
 
-            <a href="#" className="mb-3 text-sm text-gray-150">
-              Forget Password
+            <a href="#" className="text-sm text-gray-500">
+              Forgot Password?
             </a>
           </div>
 
-          <button className="mb-3 w-full bg-blue-500 text-white p-2 rounded">
+          <button className="mb-3 w-full bg-blue-500 text-white p-2 rounded cursor-pointer">
             Login
           </button>
 
-          <p className="mb-3">Don't have an account?{""} </p>
+          <p className="text-sm mt-3 text-center">Don't have an account?</p>
 
-          <a
-            href="/signup"
-            className="mb-3 border-2 p-2 bg-gray-300 cursor-pointer"
-          >
-            {" "}
+          <a href="/signup" className="text-gray-500">
             Sign Up
           </a>
         </div>
