@@ -18,3 +18,9 @@ async function login() {
 
 const data = await response.json();
 console.log(data);
+
+// btn.addEventListener("click", function name() {
+//   const emEl = document.getElementById("email").value;
+//   const emEl = document.getElementById("password").value;
+//   const emEl = document.getElementById("name").value;
+// });
