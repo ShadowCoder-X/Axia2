@@ -1,11 +1,11 @@
 import "./App.css";
-import Header from "./component/Header";
+//import Header from "./component/Header";
 import Navigation from "./component/Navigation";
-import Footer from "./component/Footer";
+//import Footer from "./component/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Login from "./pages/Login";
-import SignUp from "./pages/SignUp";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 import Dashboard from "./pages/Dashboard";
 
 function App() {
@@ -17,8 +17,8 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </div>

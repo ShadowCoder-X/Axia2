@@ -15,9 +15,9 @@ function Navigation() {
             <Link to="/">Home</Link>
           </div>
 
-          <div className=" flex justify-around ">
-            <Link to="/login">Login</Link>
-            <Link to="/signup">SignUp</Link>
+          <div className="flex justify-between">
+            <Link to="/about">About</Link>
+            <Link to="/contact">Contact</Link>
             <Link to="/dashboard">Dashboard</Link>
           </div>
         </nav>
