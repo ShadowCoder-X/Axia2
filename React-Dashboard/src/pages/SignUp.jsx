@@ -50,9 +50,12 @@ function SignUp() {
   return (
     <div
       className="flex justify-center size- 40 max-auto
-    h-155 p-6 "
+    h-180 p-6 "
     >
-      <form action="" className="p-10 text-center bg-gray-200 border- w-120">
+      <form
+        onSubmit={handleSubmit}
+        className="p-10 text-center bg-gray-200 border- w-120"
+      >
         <h2 className="text-3xl font-bold text-black mb-4 ">Sign Up</h2>
 
         <div className="text-left">
@@ -62,11 +65,11 @@ function SignUp() {
             <br />
             <input
               type="text"
-              name="full-name"
+              name="name"
               placeholder="Full Name"
-              //  value={}
-              //  onChange={}
-              className="border-2"
+              value={form.name}
+              onChange={handleChange}
+              className="w-full mb-3 p-2 border rounded"
             />
           </div>
 
@@ -78,9 +81,9 @@ function SignUp() {
               type="email"
               name="email"
               placeholder="Email"
-              //  value={}
-              //  onChange={}
-              className="border-2"
+              value={form.email}
+              onChange={handleChange}
+              className="w-full mb-3 p-2 border rounded"
             />
           </div>
 
@@ -92,9 +95,9 @@ function SignUp() {
               type="password"
               name="password"
               placeholder="Password"
-              //  value={}
-              //  onChange={}
-              className=" border-2"
+              value={form.password}
+              onChange={handleChange}
+              className="w-full mb-3 p-2 border rounded"
             />
           </div>
 
@@ -106,17 +109,22 @@ function SignUp() {
               type="password"
               name="confirmpassword"
               placeholder="Confirm Password"
-              //  value={}
-              //  onChange={}
-              className="border-2"
+              value={form.confirmPassword}
+              onChange={handleChange}
+              className="w-full mb-3 p-2 border rounded"
             />
           </div>
 
-          <button className="mb-3 border-2 p-2 bg-gray-300 cursor-pointer">
+          <button className="w-full bg-green-500 text-white p-2 rounded cursor-pointer">
             Sign Up
           </button>
 
-          <p className="mb-3 ">Already have an account?... </p>
+          <p className="text-sm mt-3 text-center ">
+            Already have an account?...{" "}
+          </p>
+          <a href="/" className="text-blue-500">
+            Login
+          </a>
         </div>
       </form>
     </div>

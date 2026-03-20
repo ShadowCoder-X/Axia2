@@ -40,8 +40,11 @@ function Login() {
   }
 
   return (
-    <div className="flex justify-center  w-[100%] h-150 p-6  ">
-      <form action="" className="p-10 text-center bg-gray-200 rounded-xl ">
+    <div className="flex justify-center  w-full h-150 p-6  ">
+      <form
+        onSubmit={handleSubmit}
+        className="p-10 text-center bg-gray-200 rounded-xl "
+      >
         <h2 className="text-3xl font-bold text-black mb-4 ">Login</h2>
 
         <div className="text-left">
