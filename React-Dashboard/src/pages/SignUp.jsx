@@ -4,40 +4,63 @@ import password_icon from "../assets/password.png";
 
 function SignUp() {
   return (
-    <div className="max-w-5xl mx-auto">
-      <div className="header">
-        <h2>SignUp Here </h2>
-        <div className="underline"></div>
-      </div>
+    <div>
+      <form action="" className="">
+        <h2 className="">Sign Up</h2>
 
-      <div className="inputs">
-        <div className="input">
+        <div>
           <img src={user_icon} alt="user-icon" className="w-6 h-6" />
-          <input type="text" />
+          <label for="full-name">Full Name: </label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            //  value={}
+            //  onChange={}
+            className="border-2"
+          />
         </div>
 
-        <div className="input">
+        <div>
           <img src={email_icon} alt="email-icon" className="w-6 h-6" />
-          <input type="email" className="border-black-200" />
+          <label for="email">Eamil: </label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            //  value={}
+            //  onChange={}
+            className="border-2"
+          />
         </div>
 
-        <div className="input">
+        <div>
           <img src={password_icon} alt="password-icon" className="w-6 h-6" />
-          <input type="password" />
+          <label for="password">Password: </label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            //  value={}
+            //  onChange={}
+            className=" border-2"
+          />
         </div>
 
-        <div className="input">
-          <img src="" alt="" />
-          <input type="text" />
+        <div>
+          <img src={password_icon} alt="password-icon" className="w-6 h-6" />
+          <label for="confirm-password">Confirm Password: </label>
+          <input
+            type="password"
+            name="confirmpassword"
+            placeholder="Confirm Password"
+            //  value={}
+            //  onChange={}
+            className="border-2"
+          />
         </div>
-
-        <div className="input">
-          <img src="" alt="" />
-          <input type="text" />
-        </div>
-      </div>
+      </form>
     </div>
   );
 }
-
 export default SignUp;
