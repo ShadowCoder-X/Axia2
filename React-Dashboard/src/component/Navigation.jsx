@@ -17,7 +17,7 @@ function Navigation() {
 
           <div className="flex justify-between">
             <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact/">Contact</Link>
             <Link to="/dashboard">Dashboard</Link>
           </div>
         </nav>

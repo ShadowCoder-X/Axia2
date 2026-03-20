@@ -11,14 +11,15 @@ import Dashboard from "./pages/Dashboard";
 function App() {
   return (
     <div>
-      <Navigation text-2xl text-green-700 />
+      <Navigation />
+
       {/* <Header />
       <Footer /> */}
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact/*" element={<Contact />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </div>

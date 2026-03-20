@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Login from "../layouts/Login";
 import SignUp from "../layouts/SignUp";
 
@@ -10,10 +10,12 @@ function Contact() {
         <h2>You can Login Here</h2>
       </div>
 
-      <Routes>
-        <Link to="/login">Login</Link>
-        <Link to="/signup">SignUp</Link>
+      <nav>
+        <Link to="login">Login</Link>
+        <Link to="signup">SignUp</Link>
+      </nav>
 
+      <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>

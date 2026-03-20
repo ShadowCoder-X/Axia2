@@ -4,7 +4,7 @@ function Dashboard() {
   return (
     <div>
       <div>
-        <h2>This is the required elements:</h2>
+        <h2>Welcome To Your Dashboard</h2>
       </div>
     </div>
   );
