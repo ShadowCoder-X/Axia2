@@ -3,7 +3,9 @@ import React from "react";
 function Dashboard() {
   return (
     <div>
-      <h1>WELCOME TO DASHBOARD OVERVIEW </h1>
+      <div>
+        <h2>This is the required elements:</h2>
+      </div>
     </div>
   );
 }

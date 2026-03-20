@@ -10,13 +10,13 @@ function Navigation() {
       <div>
         {/* <h2>Navigation</h2> */}
 
-        <nav className=" flex justify-around text-2xl text-green-700 ">
+        <nav className=" flex justify-between text-2xl text-black-700  border-2 p-4 mb-8">
           <div>
             <Link to="/">Home</Link>
           </div>
 
-          <div>
-            <Link to="/about">About</Link>
+          <div className=" flex justify-around ">
+            <Link to="/login">Login</Link>
             <Link to="/signup">SignUp</Link>
             <Link to="/dashboard">Dashboard</Link>
           </div>
