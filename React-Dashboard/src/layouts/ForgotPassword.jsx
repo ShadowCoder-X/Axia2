@@ -63,7 +63,7 @@ function ForgotPassword() {
               {loading ? "Sending..." : "Reset Password"}{" "}
             </button>
 
-            {message && <p className="">{Message}</p>}
+            {message && <p className="">{message}</p>}
           </div>
         </form>
       </div>
