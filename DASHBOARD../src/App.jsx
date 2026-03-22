@@ -1,9 +1,11 @@
 import React from "react";
-
+import Landing from "./Pages/Landing";
 function App() {
   return (
     <div>
-      <h1 className="text-center  text-4xl p-4 text-green-400">OMOLADE</h1>
+      <div></div>
+
+      <Landing />
     </div>
   );
 }

@@ -7,7 +7,7 @@ function Home() {
     w-3xl "
     >
       <div className="text-center text-3xl font-bold text-black-200">
-        <p> Hi, Ajala. Welcome Back </p>
+        <p> Hi, Mr/Miss/Mrs. Welcome Back </p>
       </div>
     </div>
   );
