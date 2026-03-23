@@ -1,11 +1,19 @@
 import React from "react";
-import Landing from "./Pages/Landing";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Landing from "./pages/Landing";
+import LogIn from "./layouts/LogIn";
+import SignUp from "./layouts/SignUp";
+
 function App() {
   return (
     <div>
-      <div></div>
+      {/* <Landing /> */}
 
-      <Landing />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/login" element={<LogIn />} />
+        <Route path="/signup" element={<SignUp />} />
+      </Routes>
     </div>
   );
 }
