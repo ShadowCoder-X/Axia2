@@ -3,6 +3,7 @@ import email_icon from "../assets/email.png";
 import password_icon from "../assets/password.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import devhub from "../assets/devhub.png";
 
 function SignUp() {
   const [form, setForm] = useState({
@@ -50,10 +51,13 @@ function SignUp() {
 
   return (
     <div className="min-h-screen flex flex-col items-center p-20 bg-gray-50">
-      <h1 className="text-4xl font-bold p-5">DevHub</h1>
+      <div className="flex gap-3">
+        <h1 className="text-4xl font-bold p-5">DevHub</h1>
+        <img src={devhub} alt="Devhub icon" className="w-13 h-13" />
+      </div>
       <form
         onSubmit={handleSubmit}
-        className="w-full p-6 text-left bg-white rounded-2xl font-medium max-w-[500px]"
+        className="w-full p-6 text-left bg-white rounded-2xl font-medium max-w-125"
       >
         <h1 className="mb-1 text-lg font-semibold text-gray-800 ">
           Create Your Account{" "}
