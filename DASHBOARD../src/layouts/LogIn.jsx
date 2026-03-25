@@ -26,7 +26,6 @@ function Login() {
           method: "POST",
           header: { "Content-Type": "Application/json" },
           body: JSON.stringify({
-            name: form.name,
             email: form.email,
             password: form.password,
           }),
@@ -48,7 +47,7 @@ function Login() {
       </div>
       <form
         onSubmit={handleSubmit}
-        className="w-full p-6 text-left bg-white rounded-2xl font-medium max-w-125"
+        className="w-full p-6 text-left mb-6  bg-white rounded-2xl font-medium max-w-125"
       >
         <h1 className="mb-1 text-lg font-semibold text-gray-800 ">
           Welcome Back
@@ -102,12 +101,23 @@ function Login() {
             <span className="text-sm mt-3 text-gray-500">
               Don't have an account?
             </span>{" "}
-            <Link to="/signup" className="text-blue-500 hover:underline">
+            <Link
+              // to="/signup"
+              to="/dashboard"
+              className="text-blue-500 hover:underline"
+            >
               Sign Up
             </Link>
           </div>
         </div>
       </form>
+
+      <Link
+        to="/"
+        className="text-sm text-gray-500 hover:underline hover:bg-blue-100 "
+      >
+        Back to home
+      </Link>
     </div>
   );
 }
